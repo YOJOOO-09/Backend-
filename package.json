@@ -1,16 +1,23 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "a backend in chai aur code chaneel",
-  "keywords": [
-    "javascript",
-    "backend"
-  ],
-  "license": "ISC",
-  "author": "Priyanshu",
-  "type": "commonjs",
-  "main": "index.js",
+  "description": "a backend from chai aur code channel",
+  "type": "module",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  }
+    "dev": "nodemon -r dotenv/config src/index.js",
+    "start": "node -r dotenv/config src/index.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "mongoose": "^8.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10",
+    "prettier": "^3.6.2"
+  },
+  "keywords": ["javascript", "backend"],
+  "author": "Priyanshu",
+  "license": "ISC"
 }
